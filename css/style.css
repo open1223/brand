@@ -1,0 +1,228 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* css reset end */
+
+*,*:before,*after{ 
+    box-sizing: border-box
+}
+.wrap{
+    text-align: center;
+}
+
+/*------ header ------*/
+.header {
+    background: url(../img/banner.png) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 960px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #707070;
+}
+.header,.container_brand{
+    margin-bottom: 64px;
+}
+.title{
+    padding-top: 100px;
+    color: #ffffff;
+    text-align-last: left;
+}
+.title h1{
+    font-size: 80px;
+    line-height: 94px;
+    font-weight: 900;
+    margin-bottom: 32px;
+}
+.title p, h3, .aboutList li{
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: 700;
+}
+.title h3{
+    padding-left: 13px;
+    margin-bottom: 48px;
+}
+.socialMedia{
+    padding-left: 10px;
+}
+.socialMedia a{
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+/*------ about ------*/
+h2{
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: 700;
+}
+.container_about h2{
+    margin-bottom: 40px;
+}
+.container_about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.photo{
+    margin-bottom: 24px;
+    display: block;
+}
+.aboutSchool{
+    margin-bottom: 12px;
+    height: 84px;
+}
+.aboutList{
+    border-top: 1px solid #000;
+    width: 384px; 
+    padding-top: 32px;
+    margin-bottom: 24px;
+}
+.aboutList li{
+    margin-bottom: 32px;
+    position: relative;
+}
+.circle::before {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: #891818;
+    border-radius: 50%;
+    margin-left: -38px;
+    margin-top: 10px;
+  }
+
+/*------ brand ------*/
+.container_brand{
+    background-color: #000000;
+    border: 1px solid #707070;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 64px;
+}
+.brand{
+    margin-bottom: 16px;
+}
+.brandSlogan{
+    margin-bottom: 32px;
+}
+.brandContent,.workContent,.workPictures{
+    font-size: 20px;
+    line-height: 42px;
+    font-family: Roboto,Medium;
+    margin-bottom: 48px;
+}
+.brandPicture1{
+    margin-bottom: 40px;
+}
+.brandPicture2{
+    margin-right: 24px;
+}
+.brandPictures{
+    margin-bottom: 160px;
+}
+
+/*------ works ------*/
+.container_works{
+    background: url(../img/photo-1561291386-5be50364cfb5.png) no-repeat center 311px;
+}
+.work{
+    margin-bottom: 24px;
+}
+.workPictures{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #ffffff;
+    margin: 0;
+    line-height: 28px;
+    height: 1638px;
+}
+.workPictures img{
+    margin-bottom: 16px;
+    display: block;
+}
+.workPictures li{
+    margin-right: 24px;
+}
+.workPicture_top, .workPicture_middle{
+    margin-bottom: 56px;
+}
+.workPicture_bottom{
+    margin-bottom: 162px;
+}
+
+/*------ footer ------*/
+.footer{
+    background-color: #000;
+    color: #ffffff;
+    padding-top: 64px;
+    padding-bottom: 80px;
+}
+.contact{
+    margin-bottom: 16px;
+}
+.contactItems{
+    font-size: 24px;
+    line-height: 36px;
+}
+.contactItems a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*------ the same font-family ------*/
+.title, h2, .contactItems{
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+}
